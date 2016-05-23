@@ -29,7 +29,7 @@ public class Entity extends Sprite {
      *
      * @param delta time since the screen was last drawn
      */
-    public void phsyics(float delta) {
+    public void physics(float delta) {
         setX(getX() + _vel.x * delta);
         setY(getY() + _vel.y * delta);
         _vel.x = _vel.x * (1 - Math.min(delta * _friction, 1));
